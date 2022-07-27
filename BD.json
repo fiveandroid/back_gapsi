@@ -11,11 +11,6 @@
       "service": "materiales electricos"
     },
     {
-      "id": 3,
-      "name": "Lesly",
-      "service": "Plasticos"
-    },
-    {
       "id": 4,
       "name": "CleanUp",
       "service": "materiales limpieza"
@@ -24,6 +19,16 @@
       "id": 29,
       "name": "Martin",
       "service": "Mantenimiento"
+    },
+    {
+      "id": 5,
+      "name": "Felipe",
+      "service": "Papeleria"
+    },
+    {
+      "id": 9,
+      "name": "Peppe",
+      "service": "Papeleria"
     }
   ]
 }

@@ -11,9 +11,8 @@ router.get("/", async (request, response) => {
     const proveedores =  await getAll( );
     response.json({
       success: true,
-      data: {
-        proveedores
-      }
+      data: proveedores
+      
     })
   }catch(error) {
     response.status(error.status || 500)

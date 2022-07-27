@@ -5,7 +5,7 @@ const fsPromises = require('fs/promises')
 
 const getAll = async () => {
   
-    const proveedores = await fsPromises.readFile("proveedores.json", "utf8")
+    const proveedores = await fsPromises.readFile("BD.json", "utf8")
     
     const proveedoresJson = JSON.parse(proveedores)
 
@@ -25,7 +25,7 @@ const create = async (postData) => {
 
       const { name, service } = postData // Recibimos datos
 
-      const providersfs = await fsPromises.readFile("proveedores.json", "utf-8")
+      const providersfs = await fsPromises.readFile("BD.json", "utf-8")
       const bd = JSON.parse(providersfs)
       const providers = bd.proveedores
   
@@ -56,7 +56,7 @@ const create = async (postData) => {
       bd.proveedores = newProviders
   
       
-      await fsPromises.writeFile("proveedores.json", JSON.stringify(bd, "\n", 4))
+      await fsPromises.writeFile("BD.json", JSON.stringify(bd, "\n", 4))
 
       
      return {
@@ -69,7 +69,7 @@ const create = async (postData) => {
 
   const remove = async (id) =>{
 
-      const providersfs = await fsPromises.readFile("proveedores.json", "utf-8")
+      const providersfs = await fsPromises.readFile("BD.json", "utf-8")
       const bd = JSON.parse(providersfs)
     
       const proveedorEncontrado = bd.proveedores.filter(proveedor => {
@@ -92,7 +92,7 @@ const create = async (postData) => {
       // Modificacion
       bd.proveedores = proveedoresSinEliminar
       
-      await fsPromises.writeFile("proveedores.json", JSON.stringify(bd, "\n", 2))
+      await fsPromises.writeFile("BD.json", JSON.stringify(bd, "\n", 2))
 
       return { "status": 202, "message": "Se elimino exitosamente" }
     
