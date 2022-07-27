@@ -1,0 +1,29 @@
+{
+  "proveedores": [
+    {
+      "id": 1,
+      "name": "Abraham",
+      "service": "materiales en general"
+    },
+    {
+      "id": 14,
+      "name": "Noemi",
+      "service": "materiales electricos"
+    },
+    {
+      "id": 3,
+      "name": "Lesly",
+      "service": "Plasticos"
+    },
+    {
+      "id": 4,
+      "name": "CleanUp",
+      "service": "materiales limpieza"
+    },
+    {
+      "id": 29,
+      "name": "Martin",
+      "service": "Mantenimiento"
+    }
+  ]
+}

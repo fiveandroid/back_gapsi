@@ -1,0 +1,11 @@
+{
+    "candidatos": [
+        {
+            "id": 10,
+            "name": "Victor",        
+            "lastname": "Reyes",
+            "avatar": "https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ"
+        }
+      
+    ]
+}
