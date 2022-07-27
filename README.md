@@ -7,7 +7,7 @@ BACK END de la prueba
 
 Despues de clonar el proyecto
 
-dentro de la carpeta test_back ejecturar 
+dentro de la carpeta test_back ejecutar 
   npm install
   
 Para levantar el servicio ejecutar se puede ejecutar los siguientes comando
